@@ -1,0 +1,154 @@
+-------System Health Check Script---------
+hostname:devops
+OS_VERSION:5.15.0-198-generic
+version_linux:Distributor ID:	Ubuntu
+Description:	Ubuntu 22.04.5 LTS
+Release:	22.04
+Codename:	jammy
+UP_since: 23:07:59 up  5:33,  1 user,  load average: 0.27, 0.13, 0.10
+-------CPU Info---------
+processor:top - 23:07:59 up  5:33,  1 user,  load average: 0.27, 0.13, 0
+Tasks: 118 total,   1 running, 117 sleeping,   0 stopped,   0 
+%Cpu(s):  3.3 us,  6.7 sy,  0.0 ni, 86.7 id,  0.0 wa,  0.0 hi,
+MiB Mem :   3863.9 total,    832.0 free,   1102.8 used,   1929
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2512
+free_usage:               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.1Gi       831Mi       1.0Mi       1.9Gi       2.5Gi
+Swap:             0B          0B          0B
+-------Disk Info---------
+disk_usage :Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  1.1M  386M   1% /run
+/dev/sdb1        39G  8.1G   31G  21% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+vagrant         476G  460G   17G  97% /vagrant
+tmpfs           387M  4.0K  387M   1% /run/user/1000
+-------Memory Info---------
+Disk usage is below 80%
+-------Network Info---------
+Ip address:1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 02:9a:ee:20:91:38 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 100 brd 10.0.2.255 scope global dynamic enp0s3
+       valid_lft 77659sec preferred_lft 77659sec
+    inet6 fd17:625c:f037:2:9a:eeff:fe20:9138/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 86237sec preferred_lft 14237sec
+    inet6 fe80::9a:eeff:fe20:9138/64 scope link 
+       valid_lft forever preferred_lft forever
+3: enp0s8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:a2:31:c0 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.186/24 metric 100 brd 192.168.1.255 scope global dynamic enp0s8
+       valid_lft 77660sec preferred_lft 77660sec
+    inet6 fe80::a00:27ff:fea2:31c0/64 scope link 
+       valid_lft forever preferred_lft forever
+4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether b6:48:5b:08:b1:e1 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+test_connectivity:PING google.com (216.58.205.78) 56(84) bytes of data.
+64 bytes from mil04s25-in-f14.1e100.net (216.58.205.78): icmp_seq=1 ttl=64 time=32.9 ms
+64 bytes from lcmada-ac-in-f14.1e100.net (216.58.205.78): icmp_seq=2 ttl=64 time=27.2 ms
+64 bytes from mil04s25-in-f14.1e100.net (216.58.205.78): icmp_seq=3 ttl=64 time=28.8 ms
+64 bytes from lcmada-ac-in-f14.1e100.net (216.58.205.78): icmp_seq=4 ttl=64 time=25.8 ms
+
+--- google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3006ms
+rtt min/avg/max/mdev = 25.765/28.662/32.884/2.669 ms
+----Service Status----
+service_ssh:● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sun 2026-11-08 17:34:42 UTC; 5h 33min ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 716 (sshd)
+      Tasks: 1 (limit: 4587)
+     Memory: 10.0M
+        CPU: 525ms
+     CGroup: /system.slice/ssh.service
+             └─716 "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+
+Warning: some journal files were not opened due to insufficient permissions.
+=================================
+System Health Report
+Date: 2026-11-08 23:13:19
+=================================
+-------System Health Check Script---------
+hostname:devops
+OS_VERSION:5.15.0-198-generic
+version_linux:Distributor ID:	Ubuntu
+Description:	Ubuntu 22.04.5 LTS
+Release:	22.04
+Codename:	jammy
+UP_since: 23:13:19 up  5:38,  1 user,  load average: 0.12, 0.09, 0.09
+-------CPU Info---------
+processor:top - 23:13:19 up  5:38,  1 user,  load average: 0.12, 0.09, 0
+Tasks: 118 total,   1 running, 117 sleeping,   0 stopped,   0 
+%Cpu(s):  3.7 us,  7.4 sy,  0.0 ni, 85.2 id,  0.0 wa,  0.0 hi,
+MiB Mem :   3863.9 total,    920.4 free,   1013.1 used,   1930
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   2602
+free_usage:               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.0Gi       920Mi       1.0Mi       1.9Gi       2.5Gi
+Swap:             0B          0B          0B
+-------Disk Info---------
+disk_usage :Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  1.1M  386M   1% /run
+/dev/sdb1        39G  8.1G   31G  21% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+vagrant         476G  460G   17G  97% /vagrant
+tmpfs           387M  4.0K  387M   1% /run/user/1000
+-------Memory Info---------
+Disk usage is below 80%
+-------Network Info---------
+Ip address:1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 02:9a:ee:20:91:38 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 100 brd 10.0.2.255 scope global dynamic enp0s3
+       valid_lft 77339sec preferred_lft 77339sec
+    inet6 fd17:625c:f037:2:9a:eeff:fe20:9138/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 86358sec preferred_lft 14358sec
+    inet6 fe80::9a:eeff:fe20:9138/64 scope link 
+       valid_lft forever preferred_lft forever
+3: enp0s8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:a2:31:c0 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.186/24 metric 100 brd 192.168.1.255 scope global dynamic enp0s8
+       valid_lft 77340sec preferred_lft 77340sec
+    inet6 fe80::a00:27ff:fea2:31c0/64 scope link 
+       valid_lft forever preferred_lft forever
+4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether b6:48:5b:08:b1:e1 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+test_connectivity:PING google.com (216.58.205.174) 56(84) bytes of data.
+64 bytes from lcmada-ad-in-f14.1e100.net (216.58.205.174): icmp_seq=1 ttl=64 time=29.3 ms
+64 bytes from mil04s28-in-f14.1e100.net (216.58.205.174): icmp_seq=2 ttl=64 time=106 ms
+64 bytes from mil04s28-in-f14.1e100.net (216.58.205.174): icmp_seq=3 ttl=64 time=22.8 ms
+64 bytes from lcmada-ad-in-f14.1e100.net (216.58.205.174): icmp_seq=4 ttl=64 time=22.1 ms
+
+--- google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3009ms
+rtt min/avg/max/mdev = 22.125/44.992/105.761/35.194 ms
+----Service Status----
+service_ssh:● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+     Active: active (running) since Sun 2026-11-08 17:34:42 UTC; 5h 38min ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 716 (sshd)
+      Tasks: 1 (limit: 4587)
+     Memory: 10.0M
+        CPU: 525ms
+     CGroup: /system.slice/ssh.service
+             └─716 "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+
+Warning: some journal files were not opened due to insufficient permissions.
